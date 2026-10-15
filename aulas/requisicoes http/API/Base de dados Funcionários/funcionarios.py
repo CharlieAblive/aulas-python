@@ -30,5 +30,12 @@ for funcionario in lista_funcionarios:
                 funcionario['cep'] = cep_digitado
                 break
 
+# base de dados atualizada
 for funcionario in lista_funcionarios:
     print(funcionario)
+
+# inserir dados onde estiver algum dado vazio
+# no cep, apenas aceitar CEPS válidos
+#   (que tenham retorno de cidade, estado, etc...)
+# salvar os dados preenchidos em um arquivo JSON
+#   (ex: dados_funcionarios_atualizados.json)
