@@ -25,7 +25,8 @@ for funcionario in lista_funcionarios:
                 for chave, valor in dicionario_funcionario.items():
                     if chave == 'localidade':
                         funcionario['cidade'] = valor
-
+                    if chave == 'estado':
+                        funcionario['estado'] = valor
                 funcionario['cep'] = cep_digitado
                 break
 
