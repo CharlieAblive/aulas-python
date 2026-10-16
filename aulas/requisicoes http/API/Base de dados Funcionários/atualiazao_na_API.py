@@ -1,0 +1,23 @@
+import requests, json
+
+with open("dados_funcionarios_atualizados.json", "r", encoding='utf-8') as arquivo:
+    lista_funcionarios = json.load(arquivo)
+    for funcionario in lista_funcionarios:
+        if funcionario['id'] == 1:
+            novo_dicionario =    {
+                "cargo": funcionario['cargo'],
+                "cep": funcionario['cep'],
+                "cidade": funcionario['cidade'],
+                "estado": funcionario['estado'],
+                "id": funcionario['id'],
+                "nome": funcionario['nome'],
+                "salario": funcionario['salario'],
+                "tempoEmpresa": funcionario['tempoEmpresa'],
+            }
+id_funcionario = 1
+atualizacao = requests.put(f'http://localhost:8080/funcionarios/'+str(id_funcionario),
+                           json=novo_dicionario)
+print(atualizacao) # PRECISAM SER 200 DE FORMA OBRIGATÓRIA
+busca = requests.get(f'http://localhost:8080/funcionarios')
+for funcionario in busca.json():
+    print(funcionario)

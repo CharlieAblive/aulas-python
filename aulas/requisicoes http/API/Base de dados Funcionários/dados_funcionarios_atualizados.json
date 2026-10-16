@@ -1,6 +1,6 @@
 [
     {
-        "cargo": "Analista de Sistemas",
+        "cargo": "CEO DA EMPRESA",
         "cep": "70000000",
         "cidade": "Brasília",
         "estado": "DF",
@@ -11,7 +11,7 @@
     },
     {
         "cargo": "Desenvolvedor Java",
-        "cep": null,
+        "cep": "01001000",
         "cidade": "São Paulo",
         "estado": "São Paulo",
         "id": 2,
@@ -27,11 +27,11 @@
         "id": 3,
         "nome": "Carla Mendes",
         "salario": 2800.0,
-        "tempoEmpresa": 0
+        "tempoEmpresa": 12
     },
     {
         "cargo": "Técnico de Suporte",
-        "cep": null,
+        "cep": "01001000",
         "cidade": "São Paulo",
         "estado": "São Paulo",
         "id": 4,
@@ -57,11 +57,11 @@
         "id": 6,
         "nome": "Felipe Rocha",
         "salario": 4800.0,
-        "tempoEmpresa": 0
+        "tempoEmpresa": 12
     },
     {
         "cargo": "Gerente de Projetos",
-        "cep": null,
+        "cep": "01001000",
         "cidade": "São Paulo",
         "estado": "São Paulo",
         "id": 7,
@@ -81,13 +81,13 @@
     },
     {
         "cargo": "UX Designer",
-        "cep": null,
+        "cep": "01001000",
         "cidade": "São Paulo",
         "estado": "São Paulo",
         "id": 9,
         "nome": "Isabela Ferreira",
         "salario": 4300.0,
-        "tempoEmpresa": 0
+        "tempoEmpresa": 12
     },
     {
         "cargo": "Estagiário de TI",
@@ -111,7 +111,7 @@
     },
     {
         "cargo": "Engenheiro de Software",
-        "cep": null,
+        "cep": "01001000",
         "cidade": "São Paulo",
         "estado": "São Paulo",
         "id": 12,
@@ -127,7 +127,7 @@
         "id": 13,
         "nome": "Mariana Gomes",
         "salario": 3300.0,
-        "tempoEmpresa": 0
+        "tempoEmpresa": 12
     },
     {
         "cargo": "Administrador de Banco de Dados",
@@ -141,7 +141,7 @@
     },
     {
         "cargo": "Product Owner",
-        "cep": null,
+        "cep": "01001000",
         "cidade": "São Paulo",
         "estado": "São Paulo",
         "id": 15,
@@ -157,11 +157,11 @@
         "id": 16,
         "nome": "Pedro Nunes",
         "salario": 4600.0,
-        "tempoEmpresa": 0
+        "tempoEmpresa": 12
     },
     {
         "cargo": "QA Tester",
-        "cep": null,
+        "cep": "01001000",
         "cidade": "São Paulo",
         "estado": "São Paulo",
         "id": 17,
@@ -181,13 +181,13 @@
     },
     {
         "cargo": "Secretária",
-        "cep": null,
+        "cep": "01001000",
         "cidade": "São Paulo",
         "estado": "São Paulo",
         "id": 19,
         "nome": "Sofia Cardoso",
         "salario": 2600.0,
-        "tempoEmpresa": 0
+        "tempoEmpresa": 12
     },
     {
         "cargo": "Coordenador de TI",

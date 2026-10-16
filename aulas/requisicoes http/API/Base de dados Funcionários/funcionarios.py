@@ -37,6 +37,22 @@ for funcionario in lista_funcionarios:
             except Exception as erro:
                 print("CEP digitado invalido, não tem endereço")
 
+    if not funcionario['tempoEmpresa']:
+        repetir = None
+        tempo_empresa_digitado = 0
+        print(f"\nO funcionário(a) {funcionario['nome']} não tem o tempo de empresa cadastrado\n")
+        while True:
+            try:
+                tempo_empresa_digitado = int(input("Digite o tempo de empresa: "))
+                repetir = False
+            except Exception as erro:
+                print("Erro inesperado: ", erro)
+                repetir = True
+            finally:
+                if not repetir:
+                    funcionario['tempoEmpresa'] = tempo_empresa_digitado
+                    break
+
 # base de dados atualizada
 for funcionario in lista_funcionarios:
     print(funcionario)
@@ -44,8 +60,7 @@ for funcionario in lista_funcionarios:
 with open('dados_funcionarios_atualizados.json', 'w', encoding='utf-8') as arquivo:
     json.dump(lista_funcionarios, arquivo, ensure_ascii=False, indent=4)
 
-# inserir dados onde estiver algum dado vazio
-# no cep, apenas aceitar CEPS válidos
-#   (que tenham retorno de cidade, estado, etc...)
-# salvar os dados preenchidos em um arquivo JSON
-#   (ex: dados_funcionarios_atualizados.json)
+with open("dados_funcionarios_atualizados.json", "r", encoding='utf-8') as arquivo:
+    arquivo_json = json.load(arquivo)
+
+    print(arquivo_json)
