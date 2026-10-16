@@ -15,9 +15,13 @@ with open("dados_funcionarios_atualizados.json", "r", encoding='utf-8') as arqui
                 "tempoEmpresa": funcionario['tempoEmpresa'],
             }
 id_funcionario = 1
-atualizacao = requests.put(f'http://localhost:8080/funcionarios/'+str(id_funcionario),
+atualizacao = requests.put(f'http://192.168.205.100:8080/funcionarios'+str(id_funcionario),
                            json=novo_dicionario)
 print(atualizacao) # PRECISAM SER 200 DE FORMA OBRIGATÓRIA
-busca = requests.get(f'http://localhost:8080/funcionarios')
+busca = requests.get(f'http://192.168.205.100:8080/funcionarios')
 for funcionario in busca.json():
     print(funcionario)
+
+# você deve atualizar todos os dados modificados no arquivo:
+#           dados_funcionarios_atualizados.json
+# na a API utilizada em sala com o metodo HTTP do tipo PUT
