@@ -1,6 +1,6 @@
 import requests, json
 
-link_funcionarios = "http://192.168.205.100:8080/funcionarios"
+link_funcionarios = "http://192.168.205.100:8080/funcionarios"\
 
 #                json    python
 # dados vazios = null == None

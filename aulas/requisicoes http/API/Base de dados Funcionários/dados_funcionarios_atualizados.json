@@ -1,13 +1,13 @@
 [
     {
-        "cargo": "CEO DA EMPRESA",
-        "cep": "70000000",
-        "cidade": "Brasília",
-        "estado": "DF",
+        "cargo": null,
+        "cep": null,
+        "cidade": null,
+        "estado": null,
         "id": 1,
-        "nome": "Ana Souza",
-        "salario": 4200.0,
-        "tempoEmpresa": 3
+        "nome": null,
+        "salario": null,
+        "tempoEmpresa": null
     },
     {
         "cargo": "Desenvolvedor Java",
@@ -16,7 +16,7 @@
         "estado": "São Paulo",
         "id": 2,
         "nome": "Bruno Lima",
-        "salario": 5100.0,
+        "salario": 10000.0,
         "tempoEmpresa": 5
     },
     {
@@ -26,7 +26,7 @@
         "estado": "MG",
         "id": 3,
         "nome": "Carla Mendes",
-        "salario": 2800.0,
+        "salario": 10000.0,
         "tempoEmpresa": 12
     },
     {
@@ -36,7 +36,7 @@
         "estado": "São Paulo",
         "id": 4,
         "nome": "Diego Santos",
-        "salario": 3200.0,
+        "salario": 10000.0,
         "tempoEmpresa": 4
     },
     {
@@ -46,7 +46,7 @@
         "estado": "BA",
         "id": 5,
         "nome": "Eduarda Costa",
-        "salario": 6200.0,
+        "salario": 10000.0,
         "tempoEmpresa": 6
     },
     {
@@ -56,7 +56,7 @@
         "estado": "CE",
         "id": 6,
         "nome": "Felipe Rocha",
-        "salario": 4800.0,
+        "salario": 10000.0,
         "tempoEmpresa": 12
     },
     {
@@ -66,7 +66,7 @@
         "estado": "São Paulo",
         "id": 7,
         "nome": "Gabriela Alves",
-        "salario": 7500.0,
+        "salario": 10000.0,
         "tempoEmpresa": 8
     },
     {
@@ -76,7 +76,7 @@
         "estado": "AM",
         "id": 8,
         "nome": "Henrique Martins",
-        "salario": 3900.0,
+        "salario": 10000.0,
         "tempoEmpresa": 4
     },
     {
@@ -86,7 +86,7 @@
         "estado": "São Paulo",
         "id": 9,
         "nome": "Isabela Ferreira",
-        "salario": 4300.0,
+        "salario": 10000.0,
         "tempoEmpresa": 12
     },
     {
@@ -96,7 +96,7 @@
         "estado": "SC",
         "id": 10,
         "nome": "João Oliveira",
-        "salario": 1500.0,
+        "salario": 10000.0,
         "tempoEmpresa": 1
     },
     {
