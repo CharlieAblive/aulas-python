@@ -58,5 +58,12 @@ print(df)
 
 print('\n')
 print("=== LISTA ALUNOS APROVADOS ===")
-filtro= df[df['status'] == "Aprovado"]
+filtro= df[['nome',"turma"]]
 print(filtro)
+
+print('\n')
+print("=== NOME E TURMA ===")
+
+for indice in df.index:
+    if df.loc[indice, "turma"] == "Python":
+        print(df.loc[indice, "nome"], df.loc[indice, "turma"])
