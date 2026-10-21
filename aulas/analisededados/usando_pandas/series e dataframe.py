@@ -8,7 +8,7 @@ import pandas as pd
 nomes =   ["João"   , "Felipe",  "André"]
 indexes = ["pessoa1", "pessoa2", "pessoa3"]
 nomes_series = pd.Series(nomes, index=indexes)
-# print(nomes_series) # series do pandas
+print(nomes_series) # series do pandas
 
 coluna_idades = pd.Series([25,30,35,40,45],
                           index=['a', 'b', 'c', 'd', 'e'])
