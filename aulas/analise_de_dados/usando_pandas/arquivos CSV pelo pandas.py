@@ -37,3 +37,5 @@ print("NÃO SEJA MAIOR DO QUE 20")
 print(df[
           -(df['idade'] > 20)
       ])
+
+df.to_csv("dados_pandas.csv", index=False)
