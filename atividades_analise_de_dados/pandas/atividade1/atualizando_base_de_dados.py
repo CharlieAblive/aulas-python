@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("funcionarios.csv",sep=";")
+df = pd.read_csv("funcionarios.csv", sep=";")
 df = df.rename(columns={
     'id': "identificador",
     "nome": "funcionario"

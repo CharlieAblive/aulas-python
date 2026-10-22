@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("funcionarios.csv",sep=";")
+df = pd.read_csv("funcionarios.csv", sep=";")
 print("=== TODA A BASE DE DADOS ===")
 print(df.columns.tolist())  # mostra todas as colunas da base de dados em lista
 # primeiro filtro
@@ -48,3 +48,5 @@ lendo_arquivo_separado = pd.read_csv("filtro_por_salario_e_cargo.csv",
                                      sep="|")
 print(lendo_arquivo_separado)
 print(lendo_arquivo_separado["nome"])
+
+
