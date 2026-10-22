@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\atividades_analise_de_dados\pandas\filtro_por_salario_e_cargo.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\atividades_analise_de_dados\pandas\funcionarios.csv">
           <value>
             <Attribute>

@@ -37,3 +37,14 @@ filtro_por_id = df[
 ]
 print("\n=== FILTRO POR ID ===")
 print(filtro_por_id)
+
+# criando arquivo com os dados filtrados
+filtro_salario_cargo.to_csv("filtro_por_salario_e_cargo.csv",
+                        index=False,
+                        encoding='utf-8',
+                        sep="|")
+
+lendo_arquivo_separado = pd.read_csv("filtro_por_salario_e_cargo.csv",
+                                     sep="|")
+print(lendo_arquivo_separado)
+print(lendo_arquivo_separado["nome"])
