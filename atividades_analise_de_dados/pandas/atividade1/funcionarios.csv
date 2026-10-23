@@ -1,4 +1,4 @@
-identificador;funcionario;salario;cargo
+﻿id;nome;salario;cargo
 1;Ana Souza;4200.0;Analista de Sistemas
 2;Bruno Lima;5100.0;Desenvolvedor Java
 3;Carla Mendes;2800.0;Assistente Administrativo
