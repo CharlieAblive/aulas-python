@@ -1,4 +1,4 @@
-nome,cpf,salario
-João de Menezes,123.456.789-00,R$ 5800
-Victor Sousa,11122233344,True
-Marcelo Oliveira,000 333 333-99,1000
+nome,cpf,salario,telefone
+João de Menezes,123.456.789-00,R$ 5.800.999,61 99100-0000
+Victor Sousa,11122233344,"5.000,88",+55 62 12345-1234
+Marcelo Oliveira,000 333 333-99,1000.99,63 1111-1111
