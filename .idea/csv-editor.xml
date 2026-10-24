@@ -24,6 +24,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\aulas\analise_de_dados\usando_pandas\dados_da_lista.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\aulas\analise_de_dados\usando_pandas\dados_do_dicionario.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\aulas\analise_de_dados\usando_pandas\dados_incompletos.csv">
           <value>
             <Attribute>
