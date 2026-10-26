@@ -3,9 +3,9 @@ import pandas as pd
 df_dados_incompletos = pd.DataFrame([
     {
         "nome": "João de Menezes",
-        "cpf": "123.456.789-00",
-        "salario": "R$ 5.800.999",
-        "telefone": "61 99100-0000"
+        "cpf": "12345678978",
+        "salario": "asd asdasdasdvadvas",
+        "telefone": "# $ *(){"
     },
     {
         "nome": "Victor Sousa",
@@ -41,7 +41,7 @@ dados_salario_formatados = (dados["salario"]
                               .str.replace(r"\.(?=\d{3}(?:\.|,|$))", "", regex=True)
                               .str.replace(r",",".", regex=False)
                               .astype(float)
-                              )
+                              ) # NaN <N/A>
 
 dados.insert(5, "salario_formatado",dados_salario_formatados)
 print(dados["salario_formatado"])
@@ -56,3 +56,5 @@ dados.insert(7, "telefone_formatado", dados_telefone_formatados)
 dados["telefone_validado"] = (dados['telefone_formatado'].str.fullmatch(r"\d{10,11}"))
 
 print(dados.to_string())
+
+dados.to_csv("dados_incompletos_teste.csv", index=False)
