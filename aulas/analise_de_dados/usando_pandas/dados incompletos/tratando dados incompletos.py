@@ -4,7 +4,7 @@ df_dados_incompletos = pd.DataFrame([
     {
         "nome": "João de Menezes",
         "cpf": "12345678978",
-        "salario": "asd asdasdasdvadvas",
+        "salario": "dez mil reais",
         "telefone": "# $ *(){"
     },
     {
@@ -39,14 +39,12 @@ dados.insert(3, "cpf_validado", dados["cpf_formatado"].str.fullmatch(r"\d{11}"))
 dados_salario_formatados = (dados["salario"]
                               .str.replace(r"[^\d,.\-]", "", regex=True)
                               .str.replace(r"\.(?=\d{3}(?:\.|,|$))", "", regex=True)
-                              .str.replace(r",",".", regex=False)
-                              .astype(float)
-                              ) # NaN <N/A>
+                              .str.replace(r",",".", regex=False)) # NaN <NA>
+dados_salario_formatados = pd.to_numeric(dados_salario_formatados, errors="coerce")
 
 dados.insert(5, "salario_formatado",dados_salario_formatados)
-print(dados["salario_formatado"])
 
-print(dados["salario_formatado"].sum())
+print(dados["salario_formatado"])
 
 dados_telefone_formatados = (
     dados["telefone"].str.replace(r"\D", "", regex=True)
@@ -57,4 +55,4 @@ dados["telefone_validado"] = (dados['telefone_formatado'].str.fullmatch(r"\d{10,
 
 print(dados.to_string())
 
-dados.to_csv("dados_incompletos_teste.csv", index=False)
+print(f'Menor salário da base de dados: {dados["salario_formatado"].mean()}')
