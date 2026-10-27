@@ -20,13 +20,6 @@ dados_telefone_formatados = (
 df_dados_despadronizados.insert(7, "numero_formatado", dados_telefone_formatados)
 df_dados_despadronizados["numero_validado"] = (df_dados_despadronizados['numero_formatado'].str.fullmatch(r"\d{10,13}"))
 
-df_dados_despadronizados["salario_decimo_terceiro"] = df_dados_despadronizados["salario_formatado"]
-df_dados_despadronizados["salario_anual"] = (df_dados_despadronizados["salario_formatado"] * 12) + df_dados_despadronizados["salario_decimo_terceiro"]
-
-print("SOMA DE TODOS OS SALÁRIOS: ", df_dados_despadronizados["salario_formatado"].sum())
-print("MENOR SALÁRIO: ", df_dados_despadronizados["salario_formatado"].min())
-print("MAIOR SALÁRIO: ", df_dados_despadronizados["salario_formatado"].max())
-print("MÉDIA DOS OS SALÁRIOS: ", df_dados_despadronizados["salario_formatado"].mean())
 
 # print(df_dados_despadronizados)
 # mudando dados inválidos dentro do Data Frame
@@ -43,25 +36,25 @@ for index, linha in df_dados_despadronizados.iterrows():
         df_dados_despadronizados.at[index, 'cpf_formatado'] = novo_cpf
         df_dados_despadronizados.at[index, 'cpf'] = novo_cpf
 
-    if pd.isna(linha["salario_formatado"]):
+    if pd.isna(df_dados_despadronizados.at[index, "salario_formatado"]):
         while True:
-            print(f'No index {index} o {df_dados_despadronizados.at[index, "nome"]} está sem SALÁRIO.')
+            print(f'O funcionário {df_dados_despadronizados.at[index, "nome"]} está sem SALÁRIO.')
             try:
                 novo_salario = input("Digite o salário do funcionário: ")
-                df_dados_despadronizados.at[index, 'salario_formatado'] = float(novo_salario)
-                df_dados_despadronizados.at[index, 'salario'] = float(novo_salario)
+                df_dados_despadronizados.at[index, "salario_formatado"] = float(novo_salario)
+                df_dados_despadronizados.at[index, "salario"] = novo_salario
+                break
             except ValueError:
-                print("Digite apenas números no salário!")
-            finally:
-                if pd.isna(df_dados_despadronizados.at[index,'salario_formatado']):
-                    print("dado invalido")
-                else:
-                    break
+                print("Digite um salário válido usando números!")
+
     if pd.isna(linha["numero_formatado"]):
         print(f'No index {index} o {df_dados_despadronizados.at[index,"nome"]} está sem NÚMERO CADASTRADO.')
         novo_numero = input("Digite o número do funcionário: ")
         df_dados_despadronizados.at[index, 'numero_formatado'] = novo_numero
         df_dados_despadronizados.at[index, 'numero'] = novo_numero
+
+df_dados_despadronizados["salario_decimo_terceiro"] = df_dados_despadronizados["salario_formatado"]
+df_dados_despadronizados["salario_anual"] = (df_dados_despadronizados["salario_formatado"] * 12) + df_dados_despadronizados["salario_decimo_terceiro"]
 
 print("\n DADOS ATUALIZADOS")
 

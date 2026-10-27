@@ -52,20 +52,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\aulas\analise_de_dados\usando_pandas\dados_incompletos.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\aulas\analise_de_dados\usando_pandas\dados_incompletos_teste.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\aulas\analise_de_dados\usando_pandas\dados_pandas.csv">
           <value>
             <Attribute>
@@ -74,13 +60,6 @@
           </value>
         </entry>
         <entry key="\aulas\analise_de_dados\usando_pandas\pessoas.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\teste\dados_incompletos.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
