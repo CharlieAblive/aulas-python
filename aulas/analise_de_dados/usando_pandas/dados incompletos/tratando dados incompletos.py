@@ -24,7 +24,7 @@ df_dados_incompletos = pd.DataFrame([
 df_dados_incompletos.to_csv("dados_incompletos.csv", index=False)
 
 dados = pd.read_csv("dados_incompletos.csv",
-                    dtype={"cpf": "string",
+                    dtype={"cpf": str,
                            "salario": "string",
                            "telefone": "string"})
 
